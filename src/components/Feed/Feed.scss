@@ -1,22 +1,30 @@
 .feed {
-  background-color: white;
-  border-radius: 20px;
   flex: .6;
-  margin: 0 20px;
-  padding: 20px 0;
+  margin: 0 10px;
   height: fit-content;
+
+  .posts {
+    .post {
+      margin: 15px 0;
+    }
+  }
 }
 
 .feed-input-container {
+  padding: 10px 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: white;
   display: flex;
-  padding: 10px;
 }
 
 .post-type-options {
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
 }
 
 .feed-input-container-avatar {

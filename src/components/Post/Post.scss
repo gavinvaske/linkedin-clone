@@ -1,0 +1,33 @@
+.post {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.post-header {
+  display: flex;
+  padding: 10px;
+
+  .post-profile-picture {
+    margin-right: 8px;
+  }
+
+  .poster-name {
+    font-weight: bold;
+  }
+
+  .poster-description {
+    font-weight: 200;
+    font-size: 12px;
+  }
+}
+
+.post-body {
+  padding: 10px;
+  border-bottom: 0.1px solid lightgray;
+  overflow-wrap: anywhere;
+}
+
+.post-footer {
+  padding: 10px;
+  display: flex;
+}

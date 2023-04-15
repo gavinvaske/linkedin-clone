@@ -6,6 +6,17 @@ import Button from '../Button/Button';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CreateIcon from '@mui/icons-material/Create';
+import Post from '../Post/Post';
+
+const posts = [
+  {
+    name: 'Gavin Vaske',
+    description: 'Software Engineer at John Deere',
+    message: 'Something really cool happened',
+    profileUrl: ''
+
+  }
+]
 
 export default function Feed() {
   return <div className="feed">
@@ -34,6 +45,10 @@ export default function Feed() {
         title='Write Article'
         iconColor='red'
       />
+    </div>
+
+    <div className="posts">
+      {posts && posts.map(post => <Post {...post} />)}
     </div>
   </div>
 }
