@@ -1,0 +1,16 @@
+.button {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  justify-content: space-evenly;
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+
+  .button-title {
+    margin-left: 8px;
+    color: gray;
+    font-weight: 400;
+  }
+}

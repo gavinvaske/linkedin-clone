@@ -1,0 +1,33 @@
+.feed {
+  background-color: white;
+  border-radius: 20px;
+  flex: .6;
+  margin: 0 20px;
+  padding: 20px 0;
+  height: fit-content;
+}
+
+.feed-input-container {
+  display: flex;
+  padding: 10px;
+}
+
+.post-type-options {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.feed-input-container-avatar {
+  margin-right: 10px;
+}
+
+.feed-input-container {
+  input {
+    width: 100%;
+    border-radius: 28px;
+    border: 0.1px solid gray;
+    font-weight: 600;
+  }
+}
