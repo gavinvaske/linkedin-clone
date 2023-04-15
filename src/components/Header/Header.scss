@@ -1,0 +1,43 @@
+.header {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 0.1px solid lightgray;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  .header-right {
+    display: flex;
+  }
+}
+
+.header-search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  background: #eef3f8;
+
+  input {
+    border-radius: 6px;
+    color: gray;
+    outline: none;
+    border: none;
+    background: none;
+  }
+}
