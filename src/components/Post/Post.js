@@ -7,11 +7,11 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import CompareArrowsIcon from '@mui/icons-material/CompareArrows';
 import SendIcon from '@mui/icons-material/Send';
 
-export default function Post({ name, description, message, profileUrl }) {
+export default function Post({ name, description, message, photoUrl }) {
   return <div className="post">
     <div className="post-header">
       <div className="post-profile-picture">
-        <Avatar src={profileUrl}/>
+        <Avatar src={photoUrl}/>
       </div>
       <div className="post-info">
         <p className="poster-name">{name}</p>

@@ -9,10 +9,13 @@ import CreateIcon from '@mui/icons-material/Create';
 import Post from '../Post/Post';
 import { db } from '../../firebase';
 import firebase from 'firebase';
+import { selectUser } from '../../features/user/userSlice';
+import { useSelector } from 'react-redux';
 
 export default function Feed() {
   const [input, setInput] = useState('');
   const [posts, setPosts] = useState([]);
+  const user = useSelector(selectUser);
 
   useEffect(() => {
     db.collection('posts').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
@@ -27,14 +30,20 @@ export default function Feed() {
 
   const createPost = (e) => {
     e.preventDefault();
+
+    alert(`Photo URL = ${user.photoUrl}`)
   
     db.collection('posts').add({
-      name: 'Gavin Vaske',
+      name: user.displayName,
       description: 'this is test',
       message: input,
-      photoUrl: '',
+      photoUrl: user.photoUrl ? user.photoUrl : '',
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
+
+    const resetInputField = () => setInput('')
+
+    resetInputField();
   }
 
   return <div className="feed">
