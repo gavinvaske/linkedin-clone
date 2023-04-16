@@ -2,8 +2,8 @@ import React from 'react';
 import './HeaderOption.scss';
 import { Avatar } from '@mui/material';
 
-export default function HeaderOption({ avatar, Icon, title }) {
-    return <div className='header-option'>
+export default function HeaderOption({ avatar, Icon, title, onClick }) {
+    return <div className='header-option' onClick={(e) => onClick(e)}>
       {Icon && <Icon className='header-option-icon' />}
       {avatar && 
         <Avatar
