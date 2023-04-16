@@ -16,6 +16,32 @@
   border-top-left-radius: 10px;
   background-color: white;
   display: flex;
+
+  .post-input-field {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 0.1px solid lightgray;
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+
+    input {
+      border: none;
+      flex: 1;
+      margin-left: 10px;
+      outline-width: 0;
+      font-weight: 600;
+    }
+
+    button {
+      display: none;
+    }
+  }
 }
 
 .post-type-options {
